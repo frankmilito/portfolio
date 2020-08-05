@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  height: 100vh;
+}
+header {
+  width: 85%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  /* position: fixed; */
+}
+nav h1 {
+  font-family: "Yellowtail", cursive;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #343433;
+  font-weight: bold;
+}
+nav a:hover {
+  /* text-decoration: underline; */
+  /* font-family: "Poppins", sans-serif; */
+  color: #ff3366;
+  transition: 0.5s;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section1 .aside1 {
+  width: 40%;
+}
+.section1 .aside2 {
+  width: 30%;
+  text-align: right;
+}
+span a {
+  padding: 0 10px;
+}
+span .fab {
+  font-size: 1.5em;
+  color: #ff3366;
+  transition: 0.5s;
+}
+span .fab:hover {
+  font-size: 1.5em;
+  color: #343433;
+}
+/* section 1 */
+section {
+  background-color: #faf4f4;
+}
+.section1 {
+  width: 85%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+.aside1 h2 {
+  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+}
+.aside1 h4 {
+  font-size: 1.6em;
+  font-family: "Poppins", sans-serif;
+  color: #ff3366;
+  margin-bottom: 35px;
+}
+.aside1 p {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+}
+span {
+  margin-right: 5px;
+}
+button {
+  background: none;
+  border: none;
+}
+.aside1 a {
+  color: #ff3366;
+}
+.aside1 a:hover > span,
+.fas {
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.aside2 h1 {
+  color: #ff3366;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+}
+.aside2 h2 {
+  font-size: 50px;
+}
+
+.skills {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+.skills h3 {
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+.skills p {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+
+  margin-bottom: 1em;
+}
+.skillSet {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skillSet .skill {
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 0;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px 5px #faf4f4;
+  margin-bottom: 5em;
+  border-bottom: 3px solid #ff3366;
+}
+.skillSet .fas {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background-color: #ff3366;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+.skillSet h2 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2em;
+}
+.skillSet h4 {
+  font-family: sans-serif;
+  margin-bottom: 1em;
+}
+.myWork {
+  width: 85%;
+  margin: 0 auto;
+}
+.myWork img {
+  max-width: 100%;
+}
+.myWork .work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3em;
+  margin-bottom: 3em;
+}
+.work .content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.work .content1 h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  color: #ff3366;
+  margin-bottom: 1em;
+}
+.work .content1 p {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.work input {
+  padding: 10px 15px;
+  background: #dfdfe1;
+  border: none;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-bottom: 1em;
+}
+.work a:hover > span,
+.fas {
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+/* section four */
+.section4 {
+  text-align: center;
+  padding: 2em 0;
+  line-height: 2em;
+}
+.containers {
+  width: 50%;
+  margin: 0 auto;
+}
+.section4 h1,
+p,
+div,
+a {
+  margin-bottom: 2em;
+  font-family: "Inter", sans-serif;
+}
+.section4 .fas {
+  color: #ff3366;
+}
+.section4 a:hover > span,
+.fas {
+  margin-right: 10px;
+  transition: 0.5s;
+}
