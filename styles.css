@@ -260,12 +260,7 @@ a {
   .hide-desktop {
     display: none;
   }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-    /* position: fixed; */
-  }
+
   nav ul {
     position: fixed;
     width: 60%;
@@ -280,7 +275,6 @@ a {
     color: #fff;
     padding: 1em 2em;
     background-color: #494948;
-    margin: 0;
     display: block;
     transition: 0.5s;
   }
@@ -298,6 +292,13 @@ a {
     padding: 0;
     margin: 0;
     color: #fff;
+  }
+  .section4 h1,
+  p,
+  div,
+  a {
+    margin-bottom: 0;
+    font-family: "Inter", sans-serif;
   }
   .section1 {
     display: flex;
@@ -362,5 +363,8 @@ a {
     padding: 0 1.4em;
     cursor: pointer;
     font-weight: bold;
+  }
+  .fas {
+    font-size: 1.5em;
   }
 }
