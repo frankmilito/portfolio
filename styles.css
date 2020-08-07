@@ -12,12 +12,17 @@ body {
   height: 100vh;
 }
 header {
-  width: 85%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 3em;
+  position: fixed;
+
+  top: 0;
+
+  background-color: #fff;
 }
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 20px 0;
   /* position: fixed; */
 }
@@ -25,7 +30,9 @@ nav h1 {
   font-family: "Yellowtail", cursive;
   cursor: pointer;
 }
-
+.show-mobile {
+  display: none;
+}
 li {
   list-style: none;
   display: inline-block;
@@ -39,13 +46,12 @@ a {
   font-weight: bold;
 }
 nav a:hover {
-  /* text-decoration: underline; */
-  /* font-family: "Poppins", sans-serif; */
   color: #ff3366;
   transition: 0.5s;
 }
 
 .section1 {
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,6 +78,7 @@ span .fab:hover {
 /* section 1 */
 section {
   background-color: #faf4f4;
+  margin-top: 4em;
 }
 .section1 {
   width: 85%;
@@ -241,4 +248,119 @@ a {
 .fas {
   margin-right: 10px;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 900px) {
+  .show-mobile {
+    display: block;
+  }
+  .menu-items {
+    display: none;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    /* position: fixed; */
+  }
+  nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    padding: 3em 0 0 0;
+  }
+  nav ul li a {
+    color: #fff;
+    padding: 1em 2em;
+    background-color: #494948;
+    margin: 0;
+    display: block;
+    transition: 0.5s;
+  }
+  nav ul li a:hover {
+    color: #fff;
+    background-color: #5a5a5a;
+  }
+  nav h1 {
+    font-family: "Yellowtail", cursive;
+    cursor: pointer;
+  }
+  li {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  .section1 .aside1 {
+    width: 100%;
+    /* text-align: center; */
+    margin-bottom: 30px;
+  }
+  .section1 .aside2 {
+    width: 100%;
+    text-align: left;
+  }
+  .aside1 h2 {
+    font-size: 2.5em;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+  }
+  .aside1 h4 {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+    color: #ff3366;
+    margin-bottom: 35px;
+  }
+  span {
+    text-decoration: underline;
+  }
+  .aside2 h1 {
+    color: #ff3366;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+
+    display: inline;
+  }
+  .aside2 h2 {
+    font-size: 30px;
+    display: inline;
+  }
+  .skillSet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .myWork {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .myWork .work {
+    display: flex;
+    flex-direction: column;
+  }
+  .exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+    cursor: pointer;
+    font-weight: bold;
+  }
 }
