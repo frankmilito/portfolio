@@ -442,6 +442,7 @@ a {
     /* justify-content: center; */
     text-align: center;
     padding: 0;
+    padding-bottom: 2em;
     margin: 0;
   }
   .section1 {
