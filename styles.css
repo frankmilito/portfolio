@@ -15,12 +15,11 @@ header {
   width: 100%;
   padding: 0 3em;
   position: fixed;
-
   top: 0;
-
+  box-shadow: 0 10px 15px 5px #faf4f4;
   background-color: #fff;
 }
-/* .underline {
+.underline {
   display: inline;
   position: relative;
   overflow: hidden;
@@ -32,8 +31,8 @@ header {
   left: 0;
   right: 100%;
   bottom: -5px;
-  background: #000;
-  height: 4px;
+  background: #ff3366;
+  height: 2px;
   transition-property: left right;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -42,7 +41,21 @@ header {
 .underline:focus:after,
 .underline:active:after {
   right: 0;
-} */
+}
+.progress-container {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.progress-bar {
+  height: 2px;
+  background: #ff3366;
+  width: 0%;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -106,7 +119,7 @@ section {
 .section1 {
   width: 85%;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 5em 0;
 }
 .aside1 h2 {
   font-size: 3em;
@@ -175,6 +188,7 @@ button {
   text-align: center;
   width: 300px;
   height: 400px;
+
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -257,12 +271,17 @@ button {
   width: 50%;
   margin: 0 auto;
 }
+.containers h2 {
+  font-size: 1em;
+}
 .section4 h1,
 p,
-div,
 a {
   margin-bottom: 2em;
   font-family: "Inter", sans-serif;
+}
+.icon {
+  padding-top: 2em;
 }
 .section4 .fas {
   color: #ff3366;
@@ -272,18 +291,42 @@ a {
   margin-right: 10px;
   transition: 0.5s;
 }
-
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 50px 0;
+  margin: 0 5em;
+}
+.main-footer h1 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-bottom: 0.4em;
+  font-family: "Poppins", sans-serif;
+  color: #ff3366;
+}
+.main-footer h2 {
+  font-size: 0.8em;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+.main-footer h2:hover {
+  color: rgb(146, 146, 146);
+}
 @media only screen and (max-width: 900px) {
   .show-mobile {
     display: block;
   }
   .menu-items {
-    display: none;
+    display: block;
   }
   .hide-desktop {
     display: none;
   }
-
+  #nav {
+    transition: 0.6s;
+    width: 0;
+  }
   nav ul {
     position: fixed;
     width: 60%;
@@ -327,8 +370,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    /* padding-top: 5em;
+    padding-bottom: 5em; */
   }
   .section1 .aside1 {
     width: 100%;
@@ -389,5 +432,35 @@ a {
   }
   .fas {
     font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .section1 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 2em;
+  }
+  .main-footer div {
+    margin-top: 2em;
+  }
+  .main-footer h1 {
+    font-size: 1.2em;
+  }
+  .main-footer h2 {
+    font-size: 1em;
+  }
+  .underline {
+    display: block;
+    position: relative;
+    overflow: hidden;
   }
 }
